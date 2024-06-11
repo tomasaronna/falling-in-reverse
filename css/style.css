@@ -56,31 +56,59 @@ nav ul {
   color: black;
 }
 
-footer {
-  display: block;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  gap: 2rem;
-  color: white;
+.grid-container{
   background-color: black;
-  width: 100%;
-  height: 10rem;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: 
+  "item1 item2 item3";
+  
+  .disclaimer{
+    color: white;
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .redes{
+    grid-area: item2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+  }
+
+  .redes img {
+    width: 2rem;
+  }
+
+  .search{
+    grid-area: item3;
+    display: flex;
+    gap: .3125rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search div input{
+    width: 20rem;
+    height: 2rem;
+  }
+  .search div button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: .4375rem;
+    border-style: solid;
+  }
+    .search div button:hover{
+      border-color: #0D6EFD;
+  }
 }
 
-footer div {
+.grid-container div {
   margin: 2rem;
-}
-
-footer div img {
-  width: 2rem;
-}
-
-footer img {
-  width: 2rem;
-  height: 2rem;
 }
 
 /* INDEX */
@@ -282,4 +310,3 @@ section table a {
 .form-container{
   margin-left: 1rem
 }
-
