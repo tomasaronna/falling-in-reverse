@@ -1,0 +1,22 @@
+.band-info {
+  @include flex(row, wrap, center, center, none);
+  padding: 0 13rem 0 13rem;
+}
+
+.band-members {
+  @include flex(row, nowrap, center, center, none);
+  .card {
+    @include flex(row, nowrap, space-around, center, none);
+    border: 0.125rem solid black;
+    box-shadow: 2rem 2rem 5rem rgb(39, 38, 38);
+    width: 100%;
+    margin: 3rem;
+    padding: 2rem;
+  }
+  .card-content img {
+    width: 100%;
+  }
+  .card-content{
+    @include flex(column, nowrap, center, center, none)
+  }
+}

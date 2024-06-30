@@ -1,10 +1,9 @@
+/* BASE */
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @font-face {
   font-family: copperlate-normal;
   src: url(../assets/fonts/OPTICopperplate.otf);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +12,12 @@
   font-weight: 500;
   font-style: normal;
 }
-
-a {
+* a {
   text-decoration: none;
   color: white;
 }
 
+/* LAYOUTS */
 header {
   background-color: black;
   width: 100%;
@@ -30,28 +29,24 @@ header {
   position: sticky;
   top: 0;
 }
-
-nav ul {
+header .logo {
+  width: 7.8125rem;
+}
+header nav ul {
   padding: 0;
   margin: 2rem;
   display: flex;
   justify-content: center;
   gap: 5rem;
 }
-
-.logo {
-  width: 7.8125rem;
-}
-
-.nav-item {
+header nav ul .nav-item {
   display: flex;
   text-align: center;
   padding: 2rem;
   border-radius: 0.1875rem;
 }
-
-.nav-item:hover {
-  background-color: #cccccca4;
+header nav ul .nav-item:hover {
+  background-color: rgba(204, 204, 204, 0.6431372549);
   transition: 0.3s;
 }
 
@@ -61,82 +56,70 @@ nav ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "item1 item2 item3";
-
-  .disclaimer {
-    color: white;
-    grid-area: item1;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .redes {
-    grid-area: item2;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .redes img {
-    width: 2rem;
-  }
-
-  .search {
-    grid-area: item3;
-    display: flex;
-    gap: 0.3125rem;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .search div input {
-    width: 20rem;
-    height: 2rem;
-  }
-
-  .search div button {
-    width: 5rem;
-    height: 2rem;
-    border-radius: 0.4375rem;
-    border-style: solid;
-  }
-  .search div button:hover {
-    border-color: #0d6efd;
-  }
+  height: 10rem;
 }
-
-.grid-container div {
-  margin: 2rem;
+.grid-container .disclaimer {
+  color: white;
+  grid-area: item1;
+  justify-self: center;
+  align-self: center;
 }
-
-/* INDEX */
+.grid-container .redes {
+  grid-area: item2;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+.grid-container .redes img {
+  width: 2rem;
+}
+.grid-container .search {
+  grid-area: item3;
+  display: flex;
+  gap: 0.3125rem;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .search div input {
+  width: 20rem;
+  height: 2rem;
+}
+.grid-container .search div button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.4375rem;
+  border-style: solid;
+}
+.grid-container .search div button:hover {
+  border-color: #0d6efd;
+}
 
 .title {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
-
 .title h1 {
   font-family: copperlate-normal;
   font-weight: bold;
 }
-
 .title h1::selection {
   background-color: black;
   color: red;
-}
-
-.ultimo-lanzamiento div h2 {
-  margin: 0 0 1rem 1rem;
 }
 
 .ultimo-lanzamiento {
   margin-top: 2rem;
   width: 100%;
   height: 50rem;
+}
+.ultimo-lanzamiento div h2 {
+  margin: 0 0 1rem 1rem;
 }
 .ultimo-lanzamiento iframe {
   height: 50rem;
@@ -147,34 +130,30 @@ nav ul {
 .proximo-disco {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
+  gap: none;
   background-image: url(../assets/images/voices-in-my-head.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 50rem;
 }
-
 .proximo-disco article {
   display: flex;
-  margin-right: 2rem;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: none;
   align-items: center;
+  gap: none;
+  margin-right: 2rem;
 }
-
-.proximo-disco img {
+.proximo-disco article img {
   width: 25rem;
 }
-
-.proximo-disco h2 {
-  color: white;
-  text-align: center;
-}
-.proximo-disco h3 {
-  color: white;
-  text-align: center;
-}
-.proximo-disco p {
+.proximo-disco article h2,
+.proximo-disco article h3,
+.proximo-disco article p {
   color: white;
   text-align: center;
 }
@@ -184,7 +163,6 @@ nav ul {
   display: flex;
   justify-content: center;
 }
-
 .tour img {
   width: 100%;
 }
@@ -193,40 +171,14 @@ nav ul {
   margin: 1rem 0 1rem 1rem;
 }
 
-/* CONCIERTOS */
-
-.next-tour {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-}
-
-.tour-dates {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.tour-dates table {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-section table a {
-  color: black;
-}
-
-/* TIENDA */
-
 .products {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
 }
-
 .products h1 {
   margin: 2rem;
 }
@@ -234,295 +186,308 @@ section table a {
 .catalogo {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
+  align-items: none;
   gap: 7.5rem;
   margin: 2rem;
 }
-
 .catalogo .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
   border: 0.125rem solid black;
   box-shadow: 2rem 2rem 5rem rgb(39, 38, 38);
-  width: 100%;
   width: 25rem;
-  margin: 3rem;
+  margin: 2rem;
 }
-
+.catalogo .card button {
+  padding: 1rem;
+  margin: 0.3rem;
+}
 .catalogo .card .card-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: none;
   text-align: center;
 }
-
-.card-content img {
+.catalogo .card .card-content img {
   width: 15rem;
   align-self: center;
 }
 
-.card button {
-  padding: 1rem;
-  margin: 0.3rem;
+.tour img {
+  height: 45rem;
 }
 
-/* SOBRE LA BANDA */
+.next-tour {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  margin: 1rem;
+}
+
+.tour-dates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.tour-dates table {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.tour-dates table a {
+  color: black;
+}
 
 .band-info {
   display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: none;
   padding: 0 13rem 0 13rem;
 }
 
 .band-members {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  gap: none;
 }
-
-.band-members .card-content img {
-  width: 100%;
-}
-
 .band-members .card {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
+  gap: none;
   border: 0.125rem solid black;
   box-shadow: 2rem 2rem 5rem rgb(39, 38, 38);
   width: 100%;
   margin: 3rem;
   padding: 2rem;
 }
-
-.band-members .card .card-content {
+.band-members .card-content img {
+  width: 100%;
+}
+.band-members .card-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  gap: none;
 }
 
-/* CONTACTO */
+.contact {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
 
+/* COMPONENTS */
 .form-container {
   margin-left: 1rem;
 }
 
-/* MEDIA QUERIES */
-
+/* MediaQ */
 @media (min-width: 1036px) and (max-width: 1280px) {
   /* HEADER */
   header {
     width: 100%;
-
-    .logo {
-      width: 5rem;
-    }
-
-    .nav-bar ul {
-      margin: 0 0 0 2rem;
-      gap: 2rem;
-    }
-
-    .nav-item {
-      padding: 1rem;
-    }
   }
-
+  header .logo {
+    width: 5rem;
+  }
+  header .nav-bar ul {
+    margin: 0 0 0 2rem;
+    gap: 2rem;
+  }
+  header .nav-bar ul .nav-item {
+    padding: 1rem;
+  }
   /* FOOTER */
-
   .grid-container .search {
     display: flex;
     text-align: center;
   }
-
   .grid-container .search div input {
     width: 5rem;
     margin-bottom: 1rem;
   }
-
   /*INDEX*/
-
   /* PROXIMO DISCO */
   .proximo-disco {
     background-size: 100% 100%;
     margin-bottom: 0;
-    article img {
-      width: 20rem;
-    }
+  }
+  .proximo-disco article img {
+    width: 20rem;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1035px) {
   /* HEADER */
-
   header {
     flex-direction: column;
     width: 100%;
     height: 100%;
     position: static;
-
-    .logo {
-      width: 5rem;
-      margin-top: 1rem;
-    }
-
-    .nav-bar {
-      height: 50%;
-    }
-
-    .nav-item {
-      padding: 1rem 0 1rem 0;
-      margin: 0;
-      justify-content: center;
-    }
-    nav ul {
-      flex-direction: column;
-      gap: 0;
-    }
   }
-
+  header .logo {
+    width: 5rem;
+    margin-top: 1rem;
+  }
+  header .nav-bar {
+    height: 50%;
+  }
+  header .nav-item {
+    padding: 1rem 0 1rem 0;
+    margin: 0;
+    justify-content: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
   /* FOOTER */
-
   .grid-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
-
+  .grid-container .disclaimer {
+    margin: 2rem 0 0 2rem;
+  }
+  .grid-container .redes {
+    margin: 2rem 0 0 2rem;
+  }
+  .grid-container .search {
+    margin: 2rem 0 0 2rem;
+  }
   .grid-container .search div input {
     width: 20rem;
     margin-bottom: 1rem;
   }
-
   /* INDEX */
-
   .proximo-disco {
     background-size: 100% 100%;
     margin-bottom: 0;
     justify-content: center;
-    article img {
-      width: 20rem;
-    }
   }
-
+  .proximo-disco article img {
+    width: 20rem;
+  }
 }
-
 @media (min-width: 320px) and (max-width: 767px) {
   /* HEADER */
-
   header {
     flex-direction: column;
     width: 100%;
     height: 100%;
     position: static;
-
-    .logo {
-      width: 5rem;
-      margin-top: 1rem;
-    }
-
-    .nav-bar {
-      height: 50%;
-    }
-
-    .nav-item {
-      padding: 1rem 0 1rem 0;
-      margin: 0;
-      justify-content: center;
-    }
-    nav ul {
-      flex-direction: column;
-      gap: 0;
-    }
   }
-
+  header .logo {
+    width: 5rem;
+    margin-top: 1rem;
+  }
+  header .nav-bar {
+    height: 50%;
+  }
+  header .nav-bar .nav-item {
+    padding: 1rem 0 1rem 0;
+    margin: 0;
+    justify-content: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
   /* FOOTER */
-
   .grid-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
-
-  .grid-container .redes{
+  .grid-container .disclaimer {
+    margin: 2rem 0 2rem 0;
+  }
+  .grid-container .redes {
+    margin: 2rem 0 2rem 0;
     flex-direction: column;
   }
-
-  .grid-container .search div input {
-    width: 10rem;
-    margin-bottom: 1rem;
-  }
-
-  .search div{
+  .grid-container .search div {
+    margin: 2rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  .grid-container .search div input {
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
   /* INDEX */
-
-  .title{
+  .title {
     justify-content: center;
-    font-size: .625rem;
+    font-size: 0.625rem;
     font-weight: bold;
   }
-
-  .ultimo-lanzamiento{
+  .ultimo-lanzamiento {
     height: 15vh;
-  };
-
-  .ultimo-lanzamiento div{
+  }
+  .ultimo-lanzamiento div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .ultimo-lanzamiento iframe{
+  .ultimo-lanzamiento iframe {
     width: 100%;
     height: 15rem;
   }
-
-  .ultimo-lanzamiento div h2{
+  .ultimo-lanzamiento div h2 {
     font-size: 1.25rem;
   }
-
-  .proximo-disco{
-    background-image:url(../assets/images/popular-monster.jpg);
+  .proximo-disco {
+    background-image: url(../assets/images/popular-monster.jpg);
     background-size: 100% 100vh;
     margin-top: 10vh;
-    
-    article{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
-
-    article h2{
-      font-size: 1.25rem;
-    }
-
-    article h3{
-      font-size: 1rem;
-    }
-
-    article p{
-      font-size: 0.825rem;
-    }
-
-    article img{
-      width: 15rem;
-    }
+  }
+  .proximo-disco article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .proximo-disco article h2 {
+    font-size: 1.25rem;
+  }
+  .proximo-disco article h3 {
+    font-size: 1rem;
+  }
+  .proximo-disco article p {
+    font-size: 0.825rem;
+  }
+  .proximo-disco article img {
+    width: 20rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

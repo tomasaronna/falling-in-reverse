@@ -1,0 +1,43 @@
+.grid-container {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "item1 item2 item3";
+  height: 10rem;
+  .disclaimer {
+    color: map-get($colores, color2);
+    grid-area: item1;
+    justify-self: center;
+    align-self: center;
+  }
+  .redes {
+    grid-area: item2;
+    color: white;
+    @include flex(row, nowrap, center, center, 2rem);
+    text-align: center;
+    img {
+      width: 2rem;
+    }
+  }
+  .search {
+    grid-area: item3;
+    display: flex;
+    gap: 0.3125rem;
+    justify-content: center;
+    align-items: center;
+    div input {
+      width: 20rem;
+      height: 2rem;
+    }
+    div button {
+      width: 5rem;
+      height: 2rem;
+      border-radius: 0.4375rem;
+      border-style: solid;
+      &:hover {
+        border-color: #0d6efd;
+      }
+    }
+  }
+}

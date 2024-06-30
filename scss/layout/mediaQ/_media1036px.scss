@@ -1,0 +1,39 @@
+@media (min-width: 1036px) and (max-width: 1280px) {
+  /* HEADER */
+  header {
+    width: 100%;
+
+    .logo {
+      width: 5rem;
+    }
+    .nav-bar ul {
+      margin: 0 0 0 2rem;
+      gap: 2rem;
+      .nav-item {
+        padding: 1rem;
+      }
+    }
+  }
+
+  /* FOOTER */
+
+  .grid-container .search {
+    display: flex;
+    text-align: center;
+    div input {
+      width: 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  /*INDEX*/
+
+  /* PROXIMO DISCO */
+  .proximo-disco {
+    background-size: 100% 100%;
+    margin-bottom: 0;
+    article img {
+      width: 20rem;
+    }
+  }
+}

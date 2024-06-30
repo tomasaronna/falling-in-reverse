@@ -1,0 +1,22 @@
+
+.tour img{
+    height: 45rem;
+}
+
+.next-tour {
+  @include flex(row, nowrap, center, center, none);
+  margin: 1rem;
+}
+
+.tour-dates {
+  @include flex(column, nowrap, center, center, none);
+  table {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 2rem;
+    a{
+        color: map-get($colores, color1);
+    }
+  }
+}

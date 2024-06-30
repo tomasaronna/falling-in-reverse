@@ -1,0 +1,30 @@
+.products {
+  @include flex(column, nowrap, center, center, none);
+  h1 {
+    margin: 2rem;
+  }
+}
+
+.catalogo {
+  @include flex(row, nowrap, space-evenly, none, 7.5rem);
+  margin: 2rem;
+  .card {
+    @include flex(column, nowrap, center, center, none);
+    border: 0.125rem solid map-get($colores, color1);
+    box-shadow: 2rem 2rem 5rem rgb(39, 38, 38);
+    width: 25rem;
+    margin: 2rem;
+    button {
+      padding: 1rem;
+      margin: 0.3rem;
+    }
+    .card-content {
+      @include flex(column, nowrap, center, center, none);
+      text-align: center;
+      img {
+        width: 15rem;
+        align-self: center;
+      }
+    }
+  }
+}
