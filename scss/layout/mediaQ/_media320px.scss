@@ -98,4 +98,25 @@
       }
     }
   }
+  /* SOBRE LA BANDA */
+  .band-info{
+    margin: 1rem;
+    padding: 0;
+    h1{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: 0.825rem;
+    }
+  }
+  .band-members {
+    flex-wrap: wrap;
+    .card {
+      margin: 1rem 1rem 1rem 1rem;
+      width: 50vh;
+    }
+    .card-content img {
+      width: 100%;
+    }
+  }
 }

@@ -56,4 +56,16 @@
       width: 20rem;
     }
   }
+
+  /* SOBRE LA BANDA */
+
+  .band-members {
+    flex-wrap: wrap;
+    .card {
+      width: 50vh;
+    }
+    .card-content img {
+      width: 100%;
+    }
+  }
 }

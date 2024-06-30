@@ -29,11 +29,24 @@
   /*INDEX*/
 
   /* PROXIMO DISCO */
+
   .proximo-disco {
     background-size: 100% 100%;
     margin-bottom: 0;
     article img {
       width: 20rem;
+    }
+  }
+
+  /* SOBRE LA BANDA */
+
+  .band-members {
+    flex-wrap: wrap;
+    .card {
+      width: 50vh;
+    }
+    .card-content img {
+      width: 100%;
     }
   }
 }
