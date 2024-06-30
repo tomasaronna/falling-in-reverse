@@ -98,7 +98,9 @@
       }
     }
   }
+
   /* SOBRE LA BANDA */
+
   .band-info{
     margin: 1rem;
     padding: 0;
@@ -117,6 +119,18 @@
     }
     .card-content img {
       width: 100%;
+    }
+  }
+
+  /* CONTACTO */
+
+  .contact{
+    margin: 1rem 0 0 1rem;
+    h1{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: 0.825rem;
     }
   }
 }
