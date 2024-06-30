@@ -261,6 +261,7 @@ header nav ul .nav-item:hover {
   justify-content: center;
   align-items: center;
   gap: none;
+  margin-top: 2rem;
   padding: 0 13rem 0 13rem;
 }
 
@@ -269,7 +270,7 @@ header nav ul .nav-item:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: none;
 }
 .band-members .card {
@@ -341,6 +342,16 @@ header nav ul .nav-item:hover {
   .proximo-disco article img {
     width: 20rem;
   }
+  /* SOBRE LA BANDA */
+  .band-members {
+    flex-wrap: wrap;
+  }
+  .band-members .card {
+    width: 50vh;
+  }
+  .band-members .card-content img {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1035px) {
   /* HEADER */
@@ -393,6 +404,16 @@ header nav ul .nav-item:hover {
   }
   .proximo-disco article img {
     width: 20rem;
+  }
+  /* SOBRE LA BANDA */
+  .band-members {
+    flex-wrap: wrap;
+  }
+  .band-members .card {
+    width: 50vh;
+  }
+  .band-members .card-content img {
+    width: 100%;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -487,6 +508,27 @@ header nav ul .nav-item:hover {
   }
   .proximo-disco article img {
     width: 20rem;
+  }
+  /* SOBRE LA BANDA */
+  .band-info {
+    margin: 1rem;
+    padding: 0;
+  }
+  .band-info h1 {
+    font-size: 1.25rem;
+  }
+  .band-info p {
+    font-size: 0.825rem;
+  }
+  .band-members {
+    flex-wrap: wrap;
+  }
+  .band-members .card {
+    margin: 1rem 1rem 1rem 1rem;
+    width: 50vh;
+  }
+  .band-members .card-content img {
+    width: 100%;
   }
 }
 
