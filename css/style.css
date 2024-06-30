@@ -530,6 +530,16 @@ header nav ul .nav-item:hover {
   .band-members .card-content img {
     width: 100%;
   }
+  /* CONTACTO */
+  .contact {
+    margin: 1rem 0 0 1rem;
+  }
+  .contact h1 {
+    font-size: 1.25rem;
+  }
+  .contact p {
+    font-size: 0.825rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
