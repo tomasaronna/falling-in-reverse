@@ -1,10 +1,11 @@
 .band-info {
   @include flex(row, wrap, center, center, none);
+  margin-top: 2rem;
   padding: 0 13rem 0 13rem;
 }
 
 .band-members {
-  @include flex(row, nowrap, center, center, none);
+  @include flex(row, nowrap, center, flex-start, none);
   .card {
     @include flex(row, nowrap, space-around, center, none);
     border: 0.125rem solid black;
