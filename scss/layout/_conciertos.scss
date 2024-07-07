@@ -9,14 +9,20 @@
 }
 
 .tour-dates {
-  @include flex(column, nowrap, center, center, none);
   table {
-    display: flex;
-    flex-direction: row;
     text-align: center;
     margin-bottom: 2rem;
-    a{
-        color: map-get($colores, color1);
+    width: 100%;
+    border-collapse: collapse;
+    th, td {
+      padding: 1rem;
+      border: .0625rem solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      color: map-get($colores, color1);
     }
   }
 }

@@ -99,15 +99,49 @@
     }
   }
 
+  /* CONCIERTOS */
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  td {
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    border: none;
+  }
+
+  td[data-label]:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+  }
+
   /* SOBRE LA BANDA */
 
-  .band-info{
+  .band-info {
     margin: 1rem;
     padding: 0;
-    h1{
+    h1 {
       font-size: 1.25rem;
     }
-    p{
+    p {
       font-size: 0.825rem;
     }
   }
@@ -124,12 +158,12 @@
 
   /* CONTACTO */
 
-  .contact{
+  .contact {
     margin: 1rem 0 0 1rem;
-    h1{
+    h1 {
       font-size: 1.25rem;
     }
-    p{
+    p {
       font-size: 0.825rem;
     }
   }
