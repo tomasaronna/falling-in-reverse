@@ -216,6 +216,7 @@ header nav ul .nav-item:hover {
   align-items: center;
   gap: none;
   text-align: center;
+  margin: 1em;
 }
 .catalogo .card .card-content img {
   width: 15rem;
@@ -308,6 +309,19 @@ header nav ul .nav-item:hover {
 }
 
 /* MediaQ */
+@media (min-width: 1281px) and (max-width: 1632px) {
+  .catalogo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .catalogo .card {
+    width: 22%;
+    margin: 1rem;
+  }
+  .catalogo .card .card-content img {
+    width: 16rem;
+  }
+}
 @media (min-width: 1036px) and (max-width: 1280px) {
   /* HEADER */
   header {
@@ -341,8 +355,21 @@ header nav ul .nav-item:hover {
   .proximo-disco article img {
     width: 20rem;
   }
+  /* TIENDA */
+  .catalogo {
+    flex-direction: column;
+  }
+  .catalogo .card {
+    width: 60vh;
+    height: 50vh;
+    margin: 1rem 0;
+  }
+  .catalogo .card .card-content img {
+    width: 10rem;
+  }
   /* CONCIERTOS */
-  th, td {
+  th,
+  td {
     padding: 1rem;
   }
   /* SOBRE LA BANDA */
@@ -407,6 +434,18 @@ header nav ul .nav-item:hover {
   }
   .proximo-disco article img {
     width: 20rem;
+  }
+  /* TIENDA */
+  .catalogo {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .catalogo .card {
+    width: 45%;
+    margin: 1rem;
+  }
+  .catalogo .card .card-content img {
+    width: 12rem;
   }
   /* CONCIERTOS */
   .tour img {
@@ -518,6 +557,30 @@ header nav ul .nav-item:hover {
   }
   .proximo-disco article img {
     width: 20rem;
+  }
+  /* TIENDA */
+  .catalogo {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 5rem;
+    align-items: center;
+  }
+  .catalogo .card {
+    width: 75%;
+    margin: 1rem 0;
+  }
+  .catalogo .card .card-content {
+    padding: 2rem;
+    margin: 0;
+  }
+  .catalogo .card .card-content h2 {
+    font-size: 1.25rem;
+  }
+  .catalogo .card .card-content p {
+    font-size: 0.825rem;
+  }
+  .catalogo .card .card-content img {
+    width: 10rem;
   }
   /* CONCIERTOS */
   .tour img {

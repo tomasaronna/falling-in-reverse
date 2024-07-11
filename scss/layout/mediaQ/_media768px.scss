@@ -57,6 +57,20 @@
     }
   }
 
+  /* TIENDA */
+
+  .catalogo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card {
+      width: 45%;
+      margin: 1rem;
+      .card-content img {
+        width: 12rem;
+      }
+    }
+  }
+
   /* CONCIERTOS */
 
   .tour img{

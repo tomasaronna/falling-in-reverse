@@ -38,9 +38,24 @@
     }
   }
 
+  /* TIENDA */
+
+  .catalogo {
+    flex-direction: column;
+    .card {
+      width: 60vh;
+      height: 50vh;
+      margin: 1rem 0;
+      .card-content img {
+        width: 10rem;
+      }
+    }
+  }
+
   /* CONCIERTOS */
 
-  th, td {
+  th,
+  td {
     padding: 1rem;
   }
 

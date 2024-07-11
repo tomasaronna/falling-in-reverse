@@ -99,6 +99,33 @@
     }
   }
 
+  /* TIENDA */
+
+  .catalogo {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 5rem;
+    align-items: center;
+    .card {
+      width: 75%;
+      margin: 1rem 0;
+      .card-content{
+        padding: 2rem;
+        margin: 0;
+        h2{
+          font-size: 1.25rem;
+        }
+        p{
+          font-size: 0.825rem;
+        }
+      }
+      .card-content img {
+        width: 10rem;
+      }
+    }
+  }
+
+
   /* CONCIERTOS */
 
   .tour img{

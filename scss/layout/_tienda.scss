@@ -21,6 +21,7 @@
     .card-content {
       @include flex(column, nowrap, center, center, none);
       text-align: center;
+      margin: 1em;
       img {
         width: 15rem;
         align-self: center;

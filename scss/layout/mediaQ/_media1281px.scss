@@ -1,0 +1,15 @@
+@media (min-width: 1281px) and (max-width: 1632px) {
+  .catalogo {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+      width: 22%;
+      margin: 1rem;
+
+      .card-content img {
+        width: 16rem;
+      }
+    }
+  }
+}
