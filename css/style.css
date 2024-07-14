@@ -64,6 +64,9 @@ header nav ul .nav-item:hover {
   justify-self: center;
   align-self: center;
 }
+.grid-container .disclaimer p {
+  font-size: 1rem;
+}
 .grid-container .redes {
   grid-area: item2;
   color: white;
@@ -77,6 +80,12 @@ header nav ul .nav-item:hover {
 }
 .grid-container .redes img {
   width: 2rem;
+}
+.grid-container .redes h4 {
+  font-size: 1rem;
+}
+.grid-container .redes h5 {
+  font-size: 0.83rem;
 }
 .grid-container .search {
   grid-area: item3;
