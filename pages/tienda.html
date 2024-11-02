@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Tienda no oficial de productos de Falling In Reverse. Compra discos, remeras y más del disco Popular Monster." />
-    <meta name="keywords" content="Falling In Reverse, Popular Monster, tienda, discos, remeras"/>
-    <meta name="author" content="Tomás Aronna San Martín"/>
-    <meta name="robots" content="index, follow"/>
-    <meta property="og:title" content="Tienda no oficial">
-    <meta property="og:site_name" content="Falling in Reverse Fan Page">
-    <meta property="og:url" content="https://tomasaronna.github.io/falling-in-reverse/pages/tienda.html">
-    <meta property="og:description" content="Tienda no oficial de productos de Falling In Reverse. Compra discos, remeras y más del disco Popular Monster.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://logos-world.net/wp-content/uploads/2024/02/Falling-in-Reverse-Logo.jpg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda no oficial de productos de Falling In Reverse. Compra discos, remeras y más del disco Popular Monster."
+    />
+    <meta
+      name="keywords"
+      content="Falling In Reverse, Popular Monster, tienda, discos, remeras"
+    />
+    <meta name="author" content="Tomás Aronna San Martín" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Tienda no oficial" />
+    <meta property="og:site_name" content="Falling in Reverse Fan Page" />
+    <meta
+      property="og:url"
+      content="https://tomasaronna.github.io/falling-in-reverse/pages/tienda.html"
+    />
+    <meta
+      property="og:description"
+      content="Tienda no oficial de productos de Falling In Reverse. Compra discos, remeras y más del disco Popular Monster."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://logos-world.net/wp-content/uploads/2024/02/Falling-in-Reverse-Logo.jpg"
+    />
     <title>Tienda</title>
-    <link rel="shortcut icon" href="../assets/images/black-icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/black-icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
@@ -45,6 +68,26 @@
           </a>
         </ul>
       </nav>
+      <button type="button" class="boton-carrito">
+        <i class="bx bx-cart"></i>
+      </button>
+      <div class="carrito">
+        <span class="cerrar">&times;</span>
+        <div class="carrito_header">
+          <h2>Productos</h2>
+        </div>
+        <div class="carrito_container"></div>
+        <div>
+          <div class="total">
+            <h2>Total:</h2>
+            <h3>$</h3>
+          </div>
+        </div>
+        <div class="finalizar_compra">
+          <button type="button" class="borrar_carrito">Borrar carrito</button>
+          <button type="button" class="fin">Finalizar compra</button>
+        </div>
+      </div>
     </header>
     <main>
       <section class="products">
@@ -62,9 +105,20 @@
                 mercado con canciones como Ronald, Popular Monster, Zombified,
                 Voices in my head, entre otros éxitos
               </p>
+              <p>$ 5500</p>
             </div>
+
             <div class="card-button">
-              <button>Comprar ahora</button>
+              <button class="mas-vinilo">+</button>
+              <input
+                type="number"
+                value="0"
+                class="contador-vinilo"
+                min="0"
+                readonly
+              />
+              <button class="menos-vinilo">-</button>
+              <button class="agregar">Agregar al carrito</button>
             </div>
           </div>
           <div class="card">
@@ -79,9 +133,19 @@
                 mercado con canciones como Ronald, Popular Monster, Zombified,
                 Voices in my head, entre otros éxitos
               </p>
+              <p>$ 4500</p>
             </div>
             <div class="card-button">
-              <button>Comprar ahora</button>
+              <button class="mas-cd">+</button>
+              <input
+                type="number"
+                value="0"
+                class="contador-cd"
+                min="0"
+                readonly
+              />
+              <button class="menos-cd">-</button>
+              <button class="agregar">Agregar al carrito</button>
             </div>
           </div>
           <div class="card">
@@ -92,9 +156,19 @@
               />
               <h2>Remera del disco Popular Monster</h2>
               <p>¡Conseguí ya la remera con la tapa oficial del nuevo disco!</p>
+              <p>$ 23000</p>
             </div>
             <div class="card-button">
-              <button>Comprar ahora</button>
+              <button class="mas-remera">+</button>
+              <input
+                type="number"
+                value="0"
+                class="contador-remera"
+                min="0"
+                readonly
+              />
+              <button class="menos-remera">-</button>
+              <button class="agregar">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -149,5 +223,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

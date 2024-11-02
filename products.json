@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "producto": "vinilo",
+        "cantidad": 0,
+        "stock": 5,
+        "precio": 5500,
+        "imagen": "../assets/images/bandstore-1_LP_Black.png"
+    },
+    {
+        "id": 2,
+        "producto": "cd",
+        "cantidad": 0,
+        "stock": 10,
+        "precio": 4500,
+        "imagen": "../assets/images/popular-monster-cd.jpg"
+    },
+    {
+        "id": 3,
+        "producto": "remera",
+        "cantidad": 0,
+        "stock": 15,
+        "precio": 23000,
+        "imagen": "../assets/images/popular-monster-shirt.jpg"
+    }
+]
