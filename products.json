@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "producto": "vinilo",
+        "producto": "Disco Popular Monster (Vinilo)",
         "cantidad": 0,
         "stock": 5,
         "precio": 5500,
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "producto": "cd",
+        "producto": "Disco Popular Monster (CD)",
         "cantidad": 0,
         "stock": 10,
         "precio": 4500,
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "producto": "remera",
+        "producto": "Remera del disco Popular Monster",
         "cantidad": 0,
         "stock": 15,
         "precio": 23000,
