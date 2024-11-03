@@ -132,10 +132,9 @@ function eliminarProducto(productoNombre, cantidadAEliminar) {
     }
 }
 
-
 let products = [];
 
-fetch('../products.json')
+fetch('https://tomasaronna.github.io/falling-in-reverse/products.json')
     .then(response => response.json())
     .then(data => {
         products = data;
